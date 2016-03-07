@@ -17,6 +17,7 @@ function start() {
     var bx = 0;
     var progress = 0;
 
+
     up1(boat1, sea1);
     up2(boat2, sea2);
 
