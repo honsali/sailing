@@ -10,8 +10,8 @@ function start() {
     var boat2 = paper.group(boat2a, boat2b, boat2c);
     var sea1 = paper.path("M0,180 L400,180  L800,180 L800,200 L0,200 L0,180").attr({stroke: "#777", fill: "#aaa"});
     var sea2 = paper.path("M0,380 L400,380  L800,380 L800,400 L0,400 L0,380").attr({stroke: "#777", fill: "#aaa"});
-    var text1 = paper.text(282,450,"إلى أين؟ طريق البر من هنا -  ").attr({fontFamily:"Amiri",fontSize:"28px",opacity:0});
-    var text2 = paper.text(250,510,"أنا مع الموج، أسير حيث يحملني -  ").attr({fontFamily:"Amiri",fontSize:"28px",opacity:0});
+    var text1 = paper.text(282,300,"إلى أين؟ طريق البر من هنا -  ").attr({fontFamily:"Amiri",fontSize:"28px",opacity:0});
+    var text2 = paper.text(250,100,"أنا مع الموج، أسير حيث يحملني -  ").attr({fontFamily:"Amiri",fontSize:"28px",opacity:0});
 
     var index = 0;
     var bx = 0;
@@ -26,10 +26,10 @@ function start() {
             f.animate({d: "M0,180 L0,180  L800,180 L800,200 L0,200 L0,180"}, 100, mina.linear, function () {
                 e.animate({transform: 't0,0 r5'}, 500, mina.linear, function () {
                     e.animate({transform: 't150,-30 r-15'}, 2000, mina.linear, function () {
-                        e.animate({transform: 't150,-5 r10'}, 1000, mina.linear, function () {
-                            e.animate({transform: 't150,-10 r-5'}, 2000, mina.linear, function () {
-                                bx = 150;
-                                e.animate({transform: 't150,-5 r3'}, 1000, up1.bind(null, e, f));
+                        e.animate({transform: 't180,-5 r10'}, 1000, mina.linear, function () {
+                            e.animate({transform: 't220,-10 r-5'}, 2000, mina.linear, function () {
+                                bx = 250;
+                                e.animate({transform: 't240,-5 r3'}, 1000, up1.bind(null, e, f));
                             });
                         });
                     });
