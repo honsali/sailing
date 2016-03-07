@@ -6,11 +6,11 @@ function start() {
     var boat1 = paper.path("M20,170 L120,160 L100,190 L25,190 L20,170").attr({stroke: "black"});
     var boat2a = paper.path("M780,370 L680,360 L700,390 L775,390 L780,370").attr({stroke: "black"});
     var boat2b = paper.rect(740, 305, 3, 70).attr({stroke: "none", transform: "r3"});
-    var boat2c = paper.path("M685,355 L740,310 L738,360 L685,355").attr({stroke: "#777", fill: "none"});
+    var boat2c = paper.path("M685,355 L740,310 L737,360 L685,355").attr({stroke: "#777", fill: "none"});
     var boat2 = paper.group(boat2a, boat2b, boat2c);
     var sea1 = paper.path("M0,180 L400,180  L800,180 L800,200 L0,200 L0,180").attr({stroke: "#777", fill: "#aaa"});
     var sea2 = paper.path("M0,380 L400,380  L800,380 L800,400 L0,400 L0,380").attr({stroke: "#777", fill: "#aaa"});
-    var text1 = paper.text(282,450,"إلى أين، طريق البر من هنا -  ").attr({fontFamily:"Amiri",fontSize:"28px",opacity:0});
+    var text1 = paper.text(282,450,"إلى أين؟ طريق البر من هنا -  ").attr({fontFamily:"Amiri",fontSize:"28px",opacity:0});
     var text2 = paper.text(250,510,"أنا مع الموج، أسير حيث يحملني -  ").attr({fontFamily:"Amiri",fontSize:"28px",opacity:0});
 
     var index = 0;
@@ -71,10 +71,14 @@ function start() {
         if (index < 8) {
             progress = progress + 40;
         }else{
-
+            text1.animate({opacity:1},1000, mina.linear,function(){
+                setTimeout( function() {
+                    text2.animate({opacity: 1}, 1000);
+                },2000);
+            })
         }
         f.animate({d: "M0,378 L400,383  L800,378 L800,400 L0,400 L0,378"}, 2000, mina.linear);
-        e.animate({transform: 't-' + progress + ',0 r-3'}, 2000, mina.linear, up2.bind(null, e, f));
+        e.animate({transform: 't-' + progress + ',0 r-3'}, 2000, up2.bind(null, e, f));
     }
 
 
