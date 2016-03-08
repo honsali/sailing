@@ -14,7 +14,7 @@ function goToPage1() {
     var text2 = paper.text(400, 400, " نصب الشرك وصيد السمك، وأنت؟ -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
     var text3 = paper.text(400, 450, " زرع الشجر وجني الثمر -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
     var text4 = paper.text(400, 500, " لكن لا شجر في البحر -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
-    var text5 = paper.text(400, 550, " نعم لا قرار له -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
+    var text5 = paper.text(400, 550, " نعم، لا قرار له -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
 var text
     var net1a =paper.path("M500,250 L450,210").attr({stroke: "black",strokeWidth:2, opacity: 0});
     var net1b =paper.path("M455,213 L455,260").attr({stroke: "black", opacity: 0});
