@@ -11,8 +11,8 @@ function goToPage1() {
     var boat2 = paper.group(boat2a, boat2b, boat2c);
 
     var text1 = paper.text(400, 350, " ما يشغلك -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
-    var text2 = paper.text(400, 400, " نصب الشراك وصيد السمك، وأنت؟ -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
-    var text3 = paper.text(400, 450, " زرع الشجر وجني الثمار -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
+    var text2 = paper.text(400, 400, " نصب الشرك وصيد السمك، وأنت؟ -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
+    var text3 = paper.text(400, 450, " زرع الشجر وجني الثمر -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
     var text4 = paper.text(400, 500, " لكن لا شجر في البحر -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
     var text5 = paper.text(400, 550, " أعلم -").attr({fontFamily: "Amiri", fontSize: "28px", opacity: 0,textAnchor:"middle"});
 var text
