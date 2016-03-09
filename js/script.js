@@ -17,6 +17,9 @@ function addNav() {
     } else if (page === 2) {
         hide("next");
         show("previous");
+    }else{
+        show("next");
+        show("previous");
     }
 }
 
