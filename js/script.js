@@ -33,4 +33,4 @@ function show(e) {
     Snap.select("#" + e).attr({opacity: 1});
 }
 
-window["goToPage2"]();
+window["goToPage0"]();
