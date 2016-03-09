@@ -14,7 +14,7 @@ function addNav() {
     if (page === 0) {
         hide("previous");
         show("next");
-    } else if (page === 1) {
+    } else if (page === 2) {
         hide("next");
         show("previous");
     }
@@ -33,4 +33,4 @@ function show(e) {
     Snap.select("#" + e).attr({opacity: 1});
 }
 
-window["goToPage0"]();
+window["goToPage2"]();
