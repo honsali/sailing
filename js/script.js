@@ -1,4 +1,4 @@
-var page = 0;
+var page = 1;
 
 function addNav() {
     var next = paper.text(200, 50, "\uf053").attr({id: "next", fontFamily: "FontAwesome", fontSize: "36px", opacity: 0,cursor:"pointer"});
@@ -11,10 +11,10 @@ function addNav() {
         page--;
         init();
     });
-    if (page === 0) {
+    if (page === 1) {
         hide("previous");
         show("next");
-    } else if (page === 3) {
+    } else if (page === 5) {
         hide("next");
         show("previous");
     }else{
@@ -36,4 +36,4 @@ function show(e) {
     Snap.select("#" + e).attr({opacity: 1});
 }
 
-window["goToPage0"]();
+window["goToPage1"]();
