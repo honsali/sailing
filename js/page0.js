@@ -2,7 +2,7 @@ function goToPage0() {
     $('#svg').empty();
     addNav();
     //paper.path("M0,0 L800,600").attr({stroke: "black"});
-    var title = paper.text(400,50,"ولكل وجهة").attr({fontFamily:"Droid Arabic Kufi",fontSize:"36px",textAnchor:"middle"});
+    var title = paper.text(400,50,"الوجهة").attr({fontFamily:"Droid Arabic Kufi",fontSize:"36px",textAnchor:"middle"});
     var box1 = paper.rect(0, 100, 800, 180).attr({stroke: "#777", fill: "none"});
     var boat1 = paper.path("M780,250 L680,240 L700,270 L775,270 L780,250").attr({stroke: "black"});
     var boat2a = paper.path("M20,250 L120,240 L100,270 L25,270 L20,250").attr({stroke: "black"});

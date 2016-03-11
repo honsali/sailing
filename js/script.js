@@ -14,7 +14,7 @@ function addNav() {
     if (page === 0) {
         hide("previous");
         show("next");
-    } else if (page === 2) {
+    } else if (page === 3) {
         hide("next");
         show("previous");
     }else{
