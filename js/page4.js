@@ -31,29 +31,31 @@ function goToPage4() {
     var progress3 = 0;
 
 
-    up1(boat1, boat2, boat3);
+    up1(boat1, boat2, boat3,sea1);
 
 
-    function up1(e, f, g) {
+    function up1(e, f, g,h) {
         if (index++ < 4) {
             progress1 = progress1 + 8;
             progress2 = progress2 + 50;
             progress3 = progress3 + 97;
         }
-        e.animate({transform: 't' + progress1 + ',0 r3'}, 2000, mina.linear, down1.bind(null, e, f, g));
+        e.animate({transform: 't' + progress1 + ',0 r3'}, 2000, mina.linear, down1.bind(null, e, f, g,h));
         f.animate({transform: 't' + progress2 + ',0 r3'}, 2000, mina.linear);
-        g.animate({transform: 't' + progress3 + ',0 r3'}, 2000, mina.linear);
+        g.animate({transform: 't' + progress3 + ',0 r5'}, 2000, mina.linear);
+        h.animate({d: "M0,262 L400,257  L800,262 L800,280 L0,280 L0,262"}, 2000, mina.linear);
     }
 
 
-    function down1(e, f, g) {
+    function down1(e, f, g,h) {
         if (index < 4) {
             progress1 = progress1 + 8;
             progress2 = progress2 + 50;
             progress3 = progress3 + 97;
         }
-        e.animate({transform: 't' + progress1 + ',0 r-6'}, 2000, mina.linear, up1.bind(null, e, f, g));
+        e.animate({transform: 't' + progress1 + ',0 r-6'}, 2000, mina.linear, up1.bind(null, e, f, g,h));
         f.animate({transform: 't' + progress2 + ',0 r-6'}, 2000, mina.linear);
-        g.animate({transform: 't' + progress3 + ',0 r-6'}, 2000, mina.linear);
+        g.animate({transform: 't' + progress3 + ',0 r2'}, 2000, mina.linear);
+        h.animate({d: "M0,258 L400,263  L800,258 L800,280 L0,280 L0,258"}, 2000, mina.linear);
     }
 }
