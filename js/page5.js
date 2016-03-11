@@ -2,7 +2,7 @@ function goToPage5() {
     $('#svg').empty();
     addNav();
     //paper.path("M0,0 L800,600").attr({stroke: "black"});
-    var title = paper.text(400, 50, "السير").attr({fontFamily: "Droid Arabic Kufi", fontSize: "36px", textAnchor: "middle"});
+    var title = paper.text(400, 50, "السير 1").attr({fontFamily: "Droid Arabic Kufi", fontSize: "36px", textAnchor: "middle"});
     var box1 = paper.rect(0, 100, 800, 180).attr({stroke: "#777", fill: "none"});
 
     var boat1a = paper.path("M0,230 L160,200 L120,270 L10,270 L0,230").attr({stroke: "black"});
@@ -31,8 +31,6 @@ function goToPage5() {
         f.animate({d: "M0,262 L400,257  L800,262 L800,280 L0,280 L0,262"}, 2000, mina.linear);
         if (index < 3) {
             index = index + 1;
-            console.log(progressX[index - 1]);
-            console.log(progressX[index]);
             Snap.animate([progressX[index - 1], progressY[index - 1], rotate[index-1], scale1[index - 1], scale3[index - 1]], [progressX[index], progressY[index], rotate[index], scale1[index], scale3[index]], function (value) {
                 e.attr({transform: 't' + value[0] + ',' + value[1] + ' r' + value[2] + ' s' + value[3]});
                 g.attr({transform: 't' + value[0] + ',' + value[1] + ' r' + value[2] + ' s' + value[4]});
@@ -49,8 +47,6 @@ function goToPage5() {
 
         if (index < 4) {
             index = index + 1;
-            console.log(progressX[index - 1]);
-            console.log(progressX[index]);
             Snap.animate([progressX[index - 1], progressY[index - 1], rotate[index-1], scale1[index - 1], scale3[index - 1]], [progressX[index], progressY[index], rotate[index], scale1[index], scale3[index]], function (value) {
                 e.attr({transform: 't' + value[0] + ',' + value[1] + ' r' + value[2] + ' s' + value[3]});
                 g.attr({transform: 't' + value[0] + ',' + value[1] + ' r' + value[2] + ' s' + value[4]});
